@@ -1,60 +1,163 @@
+/* General Page Style */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Header Style */
 header {
-    background-color: #333;
+    background-color: #2d6a4f; /* Dark green for a biological vibe */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 10px 0 0;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #d4e157; /* Light green to complement the biological theme */
     text-decoration: none;
+    font-size: 1.1em;
 }
 
+nav ul li a:hover {
+    color: #b7df66; /* Slight hover effect for modern interaction */
+    text-decoration: underline;
+}
+
+/* Main Section Style */
 main {
-    padding: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
+/* Section Titles */
 h2 {
+    color: #1b4332; /* Darker green for headings */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Unordered Lists */
+ul {
+    padding-left: 20px;
+    list-style-type: circle;
     color: #333;
 }
 
-ul {
-    padding-left: 20px;
+/* Form Styles */
+form {
+    background-color: #edf2f4; /* Soft gray/green background */
+    padding: 20px;
+    border: 2px solid #cfe3de; /* Light green border for biological theme */
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
 }
 
-form {
-    background-color: #fff;
-    padding: 15px;
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #52b788; /* Vibrant green for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #40916c; /* Darker green on hover */
+}
+
+/* Footer Style */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d6a4f;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+/* Additional Biological Accents (Optional) */
+body::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 50px;
+    left: -60px;
+    background: radial-gradient(circle at 50%, #cfe3de, transparent); /* Light biological-inspired accents */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    bottom: 30px;
+    right: -90px;
+    background: radial-gradient(circle at 50%, #cfe3de, transparent);
+    border-radius: 50%;
+    z-index: -1;
+}
