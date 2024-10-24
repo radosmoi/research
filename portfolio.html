@@ -3,36 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Your Website</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Projects - Jack Guo</title>
+    <link rel="icon" sizes="32x32" href="pictures/flavicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles_projects.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>My Projects</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <div class="scrollable-content">
     <main>
         <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Project 1</strong> - Description of project 1.</li>
-                <li><strong>Project 2</strong> - Description of project 2.</li>
-                <li><strong>Project 3</strong> - Description of project 3.</li>
-            </ul>
+            <ul2>
+                <li2><text><b>Solving the structure of TMEM106B</b><br>
+                    Amyotrophic lateral sclerosis (ALS) with frontotemporal lobar degeneration (FTLD) are neurodegenerative diseases characterized by decline in behaviour, movement, and cognitive activity.
+                    The brains of patients afflicted by ALS/FTLD have been found to frequently develop particular protein aggregates, lending to the belief that they have a correlative relationship with the disease.
+                    It is thus important to characterize these protein aggregates to uncover any potential causal mechanisms of disease progression, or to pave the way to developing treatments
+                    that can interfere with the progression of the disease.
+                    In this project, I had access to cryo-EM micrographs of purified samples of post-mortem brain tissue of patients with ALS and FTLD type B. 
+                    From the data, I managed to characterize a TMEM106B singlet filament to 3.3 A resolution, as well as help resolve the doublet morphology, replicating the findings of Arseni et al.
+                    Through this project, I learned how to use the command line to run jobs on a cluster, write scripts to manipulate large amounts of data, 
+                    familiarized myself with cryo-EM, as well as the process of helical reconstruction in RELION:
+                    from preprocessing, running processing jobs to clean the particle stack, creating accurate initial models, as well as post-processing. </text>
+                    <div><img src= "pictures/projects/TMEM.gif"></div></li2>
+                
+                <li2><text><b>Nanocompartment Dependent Production of Antimicrobial Peptides - iGEM 2022</b><br> 
+                    As antibiotic usage becomes increasingly widespread, so too has bacterial antibiotic resistance. An alternative to antibiotics, which also
+                    prevents this issue, is antimicrobial peptides (AMPs). AMPs are common peptides produced by many organisms against bacteria. 
+                    Due to their more complex, proteinaceous nature, they are less easily defended against by bacteria compared to small molecule antibiotics, 
+                    making it promising at circumventing antibiotic resistance. 
+                    However, unlike small-molecule antibiotics which can be easily produced by a serious of chemical reactions, AMPs are more difficult to synthesize. 
+                    As such, under the constraints of working in a full-student team, our iGEM team decided to express these peptides in E.coli to tackle this challenge.
+                    
+                    Parodoxically, the antibiotic properties of these compounds makes them toxic to our chosen host. As such, using my knowledge on protein biology, 
+                    I helped pick a suitable nanoparticle to sequester and mitigate their toxicity. In addition to helping clone and produce the protein, 
+                    I planned protein-dynamics simulations to gauge the feasibility of assembly of the construct, optimized the construct to increase AMP yield, as well as help produce figures and design the website.
+                
+                    More info on this project can be found here: 
+                    <a href="https://2022.igem.wiki/michigan/">https://2022.igem.wiki/michigan/</a></text>
+                    <div><img src= "pictures/projects/enc.png"></div>                
+                </li2>
+
+                <li2><text><b>Increasing the Avidity of Der P1 Antibodies</b><br>
+                    House mites are common pests in human living spaces. They secrete a protease, Der P 1, which they use to digest dust.
+                    When inhaled, Der P 1 traverses through the endothelium and proteolytically acts on our respiratory tract, leading to inflammation.
+                    Combined with their prevalence, the sensitization and development of allergies to Der P 1 is a common phenomenon.
+
+                    To combat this, we devised a potential method to obstruct the progression of Der P 1 into the respiratory tract:
+                    By linking previously characterized anti-Der P 1 antibodies to a protein scaffold, the valency and avidity of these antibodies can be increased, allowing them to better target Der P 1.
+                    Additionally, the larger complexes would also sterically inhibit the target protein from passing through the esophageal membrane, preventing downstream allergenic events.
+                    
+                    On this project, I choose suitable scaffolds, such as apoferriten or the Baker Lab's I53-50, designed and cloned the construct, as well as wrote methods to validate their assembly, 
+                    guided by advice of Neil King from the IPD.
+                    </text>
+                </li2>
+
+                <li2><text><b>An Orthogonal Encapsulin Expression System</b><br> 
+                Encapsulin nanocages are a class of self assembling protein nanocages large enough to accomodate multiple macromolecules within their lumen. 
+                Their diversity, preerential self-assembly, as well as easily manipulateable cargo makes them a suitable platform for an orthogonal expression system.
+                By linking the interior of 2 different encapsulin subunits with proteins of interest, they can be spatially seperated in distinct compartments.
+                In this project, I expressed 2 halves of a split-venus fluorescent protein in the system, assisted in protein purification, 
+                as well validated the extent of seperation within the purified samples.
+                  </text>
+                <div><img src= "pictures/projects/enc2.png"></div></li2>
+
+                <li2><text><b>Small Molecule Docking on Proteins</b><br>
+                    Small molecules in cryo-EM maps aren't always resolveable due to limitations in resolution, flexibility of said small molecules, or general unspecificity of unknown densities.
+                    In the absence of definitive functional information, molecular docking serves as a powerful tool to elucidate potential binders, as well as their binding behaviour and pose. 
+                    <br>Faced with a transmembrane protein with an unknown ligand, I learned to use various docking software to predict the position and pose of various molecules. I identified a molecule
+                    which co-localized with and fit to a distinct unoccupied density, strengthening its validity for further investigation.
+                    </text><div><img src= "pictures/projects/docking.gif"></div></li2>
+
+                <large><text><b>Organoid Measurement Program</b><br> 
+                    I created an organoid measurement program using the scikit-image and Pillow library to automatically detect<br>
+                     and measure the sizes of all organoids in 24-well plate images to more efficiently monitor their growth.
+                    <img src= "pictures/projects/organoid.gif"></text>
+                    </large>
+
+                <li2><text><b>BBB Penetrating Antibodies</b><br> 
+                    Alzheimers disease is associated with the formation of Tau filaments. As such, these filaments have been the target of many therapeutic methodologies.
+                    One proposed strategy to reduce tau aggregates in the brain is the intravenal administration of anti-tau antibodies. However, due to the presence of the blood-brain barrier (BBB), 
+                    successful localization of the antibodies in the brain proves a challenge. Furthermore, targetable proteins in the BBB are often present elsewhere in the body, leading to off-target effects. 
+                    As such, our lab developed a bispecific anti-tau antibody that had a conjugated scFV which targeted a more exclusive BBB shuttle protein, allowing efficient RMT and localization into the brain.
+                    I was involved in the cloning process of the scFV half of the mAb. As this was my first experience with wet lab, I definitely struggled a decent bit. 
+                    Ultimately, this project did serve to deepen my interest in protein design, immunotherapies, as well as neuroscience.</text>
+                    <div><img src= "pictures/projects/mab.png"></div></li2>
+            </ul2>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; Email: teneral@umich.edu</p>
+        <p>&copy; Number: +(734) 596-2411</p>
     </footer>
+    </div>
 </body>
 </html>
